@@ -1,6 +1,6 @@
 {
-  "name": "@FlySkyPie/goldberg-polyhedron",
-  "version": "1.0.0",
+  "name": "@flyskypie/goldberg-polyhedron",
+  "version": "1.0.4",
   "description": "It's uded to create Goldberg polyhegron.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,5 +26,6 @@
   },
   "dependencies": {
     "gl-matrix": "^3.3.0"
-  }
+  },
+  "files": ["dist/**/*"]
 }

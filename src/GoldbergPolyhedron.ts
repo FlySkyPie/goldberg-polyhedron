@@ -1,12 +1,12 @@
 import * as glMatrix from 'gl-matrix';
 import vec3 = glMatrix.vec3;
 
-import Vertex from './Vertex';
-import Face from './Face';
-import Edge from './Edge';
-import Polygon from './Polygon';
+import {Vertex} from './Vertex';
+import {Face} from './Face';
+import {Edge} from './Edge';
+import {Polygon} from './Polygon';
 
-class GoldbergPolyhedron {
+export class GoldbergPolyhedron {
     private polygons: Array<Polygon>;
     private vertices: Array<any>;
     private faces: Array<any>;
@@ -306,5 +306,3 @@ class GoldbergPolyhedron {
         this.polygons.toString();
     }
 }
-
-export default GoldbergPolyhedron;

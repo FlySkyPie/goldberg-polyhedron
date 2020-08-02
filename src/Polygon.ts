@@ -1,10 +1,10 @@
 import * as glMatrix from 'gl-matrix';
 import vec3 = glMatrix.vec3;
 
-import Vertex from './Vertex';
-import Vec3Factory from './Vec3Factory';
+import {Vertex} from './Vertex';
+import {Vec3Factory} from './Vec3Factory';
 
-class Polygon {
+export class Polygon {
     nor: any;
     selected: number | boolean;
     neighbours: Array<any>;
@@ -83,4 +83,3 @@ class Polygon {
     }
 
 }
-export default Polygon;

@@ -1,6 +1,6 @@
-import Vertex from './Vertex';
+import {Vertex} from './Vertex';
 
-class Edge {
+export class Edge {
     vertex: [Vertex, Vertex];
     face: Array<any>;
     nextFaceVertex: Array<any>;
@@ -22,5 +22,3 @@ class Edge {
         return "(" + this.vertex[0].toString() + ") -> (" + this.vertex[1].toString() + ")";
     }
 }
-
-export default Edge;

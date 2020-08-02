@@ -1,6 +1,6 @@
-import Vertex from './Vertex';
+import {Vertex} from './Vertex';
 
-class Face {
+export class Face {
     vertices: Array<Vertex>;
     edge: Array<any>;
     intVertices: Array<any>;
@@ -74,5 +74,3 @@ class Face {
         return result;
     }
 }
-
-export default Face;

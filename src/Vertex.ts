@@ -1,5 +1,5 @@
 
-class Vertex {
+export class Vertex {
     x: [number, number, number];
     face: Array<any>;
     vertex: Array<any>;
@@ -89,5 +89,3 @@ class Vertex {
         return "(" + this.x[0] + ", " + this.x[1] + ", " + this.x[2] + ")";
     }
 }
-
-export default Vertex;
