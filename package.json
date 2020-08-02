@@ -1,5 +1,5 @@
 {
-  "name": "goldberg-polyhedron",
+  "name": "@FlySkyPie/goldberg-polyhedron",
   "version": "1.0.0",
   "description": "It's uded to create Goldberg polyhegron.",
   "main": "dist/index.js",
