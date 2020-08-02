@@ -1,0 +1,29 @@
+{
+  "name": "goldberg-polyhedron",
+  "version": "1.0.0",
+  "description": "It's uded to create Goldberg polyhegron.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlySkyPie/goldberg-polyhedron.git"
+  },
+  "keywords": [
+    "goldberg polyhegron"
+  ],
+  "author": "FlySkyPie (Wei Ji)",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/FlySkyPie/goldberg-polyhedron/issues"
+  },
+  "homepage": "https://github.com/FlySkyPie/goldberg-polyhedron#readme",
+  "devDependencies": {
+    "@types/gl-matrix": "^2.4.5",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.3.0"
+  }
+}
