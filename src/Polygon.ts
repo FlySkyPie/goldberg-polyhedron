@@ -38,7 +38,7 @@ export class Polygon {
         }
     }
 
-    contains(p:any) {
+    contains(p: any) {
         var sides = this.vertexPoints.length / 3;
         for (var i = 0; i < sides; i++) {
             var p1 = Vec3Factory.create([this.vertexPoints[i * 3], this.vertexPoints[i * 3 + 1], this.vertexPoints[i * 3 + 2]]);
@@ -54,14 +54,14 @@ export class Polygon {
         return true;
     }
 
-    setSelected(n:any) {
+    setSelected(n: any) {
         this.selected = n;
         for (var i in this.neighbours)
             if (this.neighbours[i].selected < n - 1)
                 this.neighbours[i].setSelected(n - 1);
     }
 
-    toJsonString() {
+    private toJsonString() {
         let points: Array<object> = [];
 
         var k = 0;
@@ -78,8 +78,24 @@ export class Polygon {
         return JSON.stringify(points);
     }
 
-    toString() {
+    public toString() {
         return this.toJsonString();
     }
 
+    public getPoints() {
+        let points: Array<object> = [];
+
+        var k = 0;
+        for (var i = 0; i < this.vertexPoints.length / 3; i++) {
+            let x, y, z;
+            x = this.vertexPoints[k++];
+            y = this.vertexPoints[k++];
+            z = this.vertexPoints[k++];
+            points.push({
+                x: x, y: y, z: z
+            });
+        }
+
+        return points;
+    }
 }

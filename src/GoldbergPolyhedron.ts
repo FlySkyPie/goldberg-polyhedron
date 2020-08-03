@@ -298,11 +298,26 @@ export class GoldbergPolyhedron {
                 this.polygons[i].neighbours.push(this.polygons[this.vertices[i].vertex[j]]);
     }
 
-    public createJsonString(n: number) {
+    public createJsonString(n: number): string {
         this.initIcosahedron();
-        this.makeGeosidic(2, 0);
+        this.makeGeosidic(n, 0);
         this.projectSphere();
         this.makeDualMesh();
-        this.polygons.toString();
+        return "[" + this.polygons.toString() + "]";
+    }
+
+    public getPolygons(n: number) {
+        this.initIcosahedron();
+        this.makeGeosidic(n, 0);
+        this.projectSphere();
+        this.makeDualMesh();
+        
+        let polygonArray = [];
+        
+        for (let polygon of this.polygons){
+            polygonArray.push(polygon.getPoints());
+        }
+        
+        return polygonArray;
     }
 }
